@@ -30,6 +30,10 @@ In this interview, you will be completing an API endpoint using the data that ex
 
 You are expected to have looked over the data-models before the interview. You may ask questions about this preface at the start of the interview if anything is unclear.
 
+## Entity Relation Diagram
+
+![ERD](https://github.com/karmasuite/karmasuite-interview-preface/blob/main/assets/ERD.png?raw=true)
+
 ## Preface Commands
 
 This preface and the interview will use `pnpm`, so make sure to install it:
