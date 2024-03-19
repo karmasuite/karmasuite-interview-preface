@@ -1,0 +1,28 @@
+{
+  "name": "karmasuite-interview-preface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "drizzle": "drizzle-kit",
+    "drizzle:generate": "pnpm drizzle generate:sqlite --config drizzle.config.js",
+    "drizzle:migrate": "ts-node ./drizzle-migrate.ts",
+    "drizzle:studio": "pnpm drizzle studio",
+    "drizzle:up": "pnpm drizzle up:sqlite --config drizzle.config.js",
+    "start": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "drizzle-kit": "^0.20.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@types/better-sqlite3": "^7.6.9",
+    "better-sqlite3": "^9.4.3",
+    "drizzle-orm": "^0.30.2"
+  }
+}

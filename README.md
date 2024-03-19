@@ -8,10 +8,10 @@ KarmaSuite helps non-profit accountants create, track and manage their expenses,
   * These are items that non-profits need to pay for.
 * Fund
   * Sometimes referred to as `Grant` or `Contract`, this is a funding source that can be used to pay for expenses. These grants have numerous restrictions that prevent them from being used on whatever expense.
-* Revenue
-  * This is money the non-profit has outside of their grants that can also be used to pay for expenses.
 * Cost Center
   *  A department or operation of the non-profit that incurs expenses.
+* Account
+  * These are items that expenses can be created for. For example, you can have an "Office Supplies" account that expenses are created for.
 
 ## Context
 
@@ -26,7 +26,32 @@ With KarmaSuite, non-profits upload their grants and expenses then use tools Kar
 
 ## Interview Notes
 
-KarmaSuite is a software that operates on accounting data. That means that there is a lot of data to be created and read in various representations. In this interview, you will be reading data from a relational database, transforming this data, then representing it on the frontend.
+In this interview, you will be completing an API endpoint using the data that exists in a SQLite database, then representing the data from this endpoint on the frontend. In this preface, you can find the data-models that will be used during the interview (in `src/schema/tables.ts`), along with examples of how data can be queried with Drizzle (in `src/index.ts`).
+
+You are expected to have looked over the data-models before the interview. You may ask questions about this preface at the start of the interview if anything is unclear.
+
+## Preface Commands
+
+This preface and the interview will use `pnpm`, so make sure to install it:
+
+```bash
+# install pnpm
+npm install -g pnpm
+# install dependencies
+pnpm install
+```
+
+* See the data and all tables:
+
+```bash
+pnpm run drizzle:studio
+```
+
+* Run the script to try running queries
+
+```bash
+pnpm start
+```
 
 Some of the tools that will be used in the interview:
 1. [drizzle-orm](https://orm.drizzle.team/)
