@@ -26,7 +26,7 @@ With KarmaSuite, non-profits upload their grants and expenses then use tools Kar
 
 ## Interview Notes
 
-In this interview, you will be completing an API endpoint using the data that exists in a SQLite database, then representing the data from this endpoint on the frontend. In this preface, you can find the data-models that will be used during the interview (in `src/schema/tables.ts`), along with examples of how data can be queried with Drizzle (in `src/index.ts`).
+In this interview, you will clone another GitHub repo and complete the implementation of an API endpoint using the data that exists in a SQLite database, then representing the data from this endpoint on the frontend. In this preface, you can find the data-models that will be used during the interview (in `src/schema/tables.ts`), along with examples of how data can be queried with Drizzle (in `src/index.ts`). Note that the GitHub repo you will be cloning during the interview will use the exact same directory structure and database as in this challenge (including additional files for the partial API endpoint and a home page).
 
 You are expected to have looked over the data-models before the interview. You may ask questions about this preface at the start of the interview if anything is unclear.
 
@@ -35,6 +35,10 @@ You are expected to have looked over the data-models before the interview. You m
 ![ERD](https://github.com/karmasuite/karmasuite-interview-preface/blob/main/assets/ERD.png?raw=true)
 
 ## Preface Commands
+
+### Important!
+
+Before running any of these commands, ensure that you are using a version of Node.js that is v18.17.0 or newer. The challenge uses a version of Next.js that will require at least this Node.js version.
 
 This preface and the interview will use `pnpm`, so make sure to install it:
 
