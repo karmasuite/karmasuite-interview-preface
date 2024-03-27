@@ -55,7 +55,7 @@ pnpm install
 pnpm run drizzle:studio
 ```
 
-* Run the script to try running queries
+* Run the Next.js app and try the queries at http://localhost:3000/api/test-queries
 
 ```bash
 pnpm start
@@ -66,3 +66,13 @@ Some of the tools that will be used in the interview:
 2. [@tanstack/react-query](https://tanstack.com/query/latest)
 3. [next](https://nextjs.org/)
 4. [typescript](https://www.typescriptlang.org/)
+
+## Do before the interview!
+
+We would like to ensure that you are prepared for this interview. So to do that, we are going to require that you complete a small coding exercise that we will check at the beginning of the interview.
+
+If you do not have this to present at the beginning of the interview, the interview will be concluded immediately.
+
+### Requirements
+1. Complete the implementation of the /api/expenses route so that the api returns a list of expense names and their associated account codes.
+2. On the home page (http://localhost:3000/), render the data that you queried in step (1) (styling does not matter).
