@@ -34,18 +34,21 @@ You are expected to have looked over the data-models before the interview. You m
 
 ![ERD](https://github.com/karmasuite/karmasuite-interview-preface/blob/main/assets/ERD.png?raw=true)
 
-## Preface Commands
+## Setup Instructions
 
-### Important!
+### Important Prerequisites
 
-Before running any of these commands, ensure that you are using a version of Node.js that is v18.17.0 or newer. The challenge uses a version of Next.js that will require at least this Node.js version.
+Before running any commands, ensure you have:
+1. **Node.js v18.17.0 or newer** (the challenge uses Next.js which requires this version)
+2. **pnpm package manager** installed globally
 
-This preface and the interview will use `pnpm`, so make sure to install it:
+### Install pnpm and Dependencies
 
 ```bash
-# install pnpm
+# Install pnpm globally
 npm install -g pnpm
-# install dependencies
+
+# Install project dependencies
 pnpm install
 ```
 
@@ -58,8 +61,16 @@ pnpm run drizzle:studio
 * Run the Next.js app and try the queries at http://localhost:3000/api/test-queries
 
 ```bash
-pnpm start
+pnpm dev
 ```
+
+### View Database with Drizzle Studio
+
+```bash
+# Open Drizzle Studio to see the data and all tables
+pnpm run drizzle:studio
+```
+Access Drizzle Studio at: https://local.drizzle.studio
 
 Some of the tools that will be used in the interview:
 1. [drizzle-orm](https://orm.drizzle.team/)
